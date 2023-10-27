@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer{
+    background-color: #222222;
+    padding: 0.3rem;
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.barra-sup{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0.5rem 1rem;
+}
+
+.barra-sup h5{
+    color: white;
+    font-size: 0.75rem;
+}
+
+.barra-sup nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.75rem;
+}
+
+.barra-sup nav ul li, .cabecera nav ul li{
+    padding: 0 0.5rem;
+}
+
+.barra-sup nav ul li a, .cabecera nav ul li a{
+    color: white;
+}
+
+.barra-sup nav ul li a img, .cabecera nav ul li a img{
+    padding: 0 0.2rem;
+}
+
+.cabecera{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F1A83F;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.cabecera nav ul{
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.banner{
+    background-image: url(../img/bowl.png);
+    background-size: cover;
+    position: relative;
+    height: 80vh;    
+    
+}
+
+.banner article{
+    position: absolute;
+    text-align: center;
+    top: 32vh;
+    right: 5rem;
+}
+
+.banner article h1{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    color: #3D2314;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.banner article h3{
+    margin: 1rem 0 1.5rem 0;
+    color: #3D2314;
+    font-weight: 600;
+}
+
+.banner article a{
+    color: white;
+    font-weight: 500;
+    background-color: #F1A83F;
+    padding: 0.75rem 2rem;
+    border-radius: 10px;
+}
+
+.titulo-prod{
+    text-align: center;
+    margin: 2rem;
+}
+
+.titulo-prod h1{
+    color: #3D2314;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.titulo-prod h4{
+    color: #3D2314;
+}
+
+.cont-prod{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.prod{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAF5;
+    padding: 1rem 0;
+}
+
+.prod h4{
+    color: #3D2314;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.prod p{
+    color: #F1A83F;
+    font-weight: 600;
+}
+
+
+
+
+
+
