@@ -348,10 +348,6 @@ a{
         flex-direction: column-reverse;
         gap: 1rem;
     }
-
-        .footer-info .logo{
-            width: 90%;
-        }
     
 }
 
@@ -377,5 +373,10 @@ a{
             padding: 0.5rem;
             border-radius: 12px;
             margin-top: 0.5rem;
+        }
+
+    
+        .footer-info .logo{
+            width: 90%;
         }
 }
