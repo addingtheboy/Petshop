@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Petshop </title>
 </head>
@@ -14,11 +15,9 @@
             <h5>Grandes ofertas en comederos</h5> 
             
             <!--Menu regional-->
-            <nav>
-                <ul type="none">
-                    <li><a href="#">Español<img src="./img/vector.png" alt="patita"></a></li>
-                    <li></i><a href="#">ARG$<img src="./img/vector.png" alt="patita"></a></li>
-                </ul>
+            <nav class="reg-menu">
+                <a href="#">Español <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="#">ARG$ <i class="fa-solid fa-chevron-down"></i></a>
             </nav>
         </div>
 
@@ -27,14 +26,14 @@
             <a href="#"><img src="./img/Logo.png" alt="Petshop"></a>
 
             <!--Menu principal-->
-            <nav>
-                <ul type="none">
-                    <li><a href="#"><img src="./img/pawprint 4.png" alt="patita">Categorías</a></li>
-                    <li><a href="#"><img src="./img/pawprint 4.png" alt="patita">Pets</a></li>
-                    <li><a href="#"><img src="./img/pawprint 4.png" alt="patita">Nosotros</a></li>
-                    <li><a href="#"><img src="./img/pawprint 4.png" alt="patita">Contactanos</a></li>
-                </ul>
+            <nav class="main-menu">
+                <a href="#"><i class="fa-solid fa-paw"></i> Categorías</a>
+                <a href="#"><i class="fa-solid fa-paw"></i> Pets</a>
+                <a href="#"><i class="fa-solid fa-paw"></i> Nosotros</a>
+                <a href="#"><i class="fa-solid fa-paw"></i> Contactanos</a>
             </nav>
+
+            <img src="./img/menu-icon 1.svg" alt="menu" class="burger-menu">
         </div>
     </header>
 
@@ -43,9 +42,9 @@
 
         <!--Banner-->
         <section class="banner">
-            <article>
+            <article class="bienvenido">
                 <h1>¡Es un placer tenerte aquí!</h1>
-                <h3>¡Comederos en descuento!</h3>
+                <p>¡Comederos en descuento!</p>
                 <a href="#">COMEDEROS</a>
             </article>
         </section>
@@ -57,7 +56,7 @@
             <div  class="titulo-prod">
                 <img src="./img/pawprint 1.png" alt="Patita">
                 <h1>Productos Destacados</h1>
-                <h4>Comederos  -  Accesorios  -  Comida</h4>
+                <p>Comederos  -  Accesorios  -  Comida</p>
             </div>
             
             <!--Productos-->
@@ -81,14 +80,71 @@
                 </article>
             </div>
         </section>
-    </main>
 
-    <!--Pie de pagina-->   
-    <section>
-        <footer>
-            Todos los derechos reservados Front End
-        </footer>
-    </section>
+        <section class="contact">
+            <h1>Contactanos</h1>
+        
+            <form action="#" class="contact-form" method="POST">
+                <input type="text" placeholder="Nombre y Apellido" class="form-input">
+                <input type="email" placeholder="Ingresa tu correo electrónico" class="form-input">
+                <input type="tel" placeholder="Teléfono" class="form-input">
+                <div class="form-btn">
+                    <input type="reset" value="Resetear" class="btn-reset">
+                    <input type="submit" value="Enviar" class="btn-submit">
+                </div>
+            </form>
+        </section>
+
+    </main>
+        
+    <!--Pie de pagina--> 
+    <footer>
+
+        <!--Barra de subscribcion--> 
+        <section class="subscription">
+            <h1><i class="fa-regular fa-envelope" style="color: #fafaf5;"></i>
+                Subscribete para más novedades</h1>
+            <form action="#" method="post">
+                <input type="email" placeholder="Ingresa tu correo electrónico" class="sub-form-input">
+                <input type="submit" value="Subscribirme" class="sub-form-btn">
+            </form>
+        </section>
+
+         <!--Footer footer--> 
+
+         <div class="footer-info">
+
+
+            <section>
+                <article  class="org-info">
+                    <div class="info-title">
+                        <h1>Localidad</h1>
+                        <p>Calle - Provincia</p>
+                    </div>
+                    <img src="./img/icon-map.svg" alt="Map Icon">
+                </article>
+                <article  class="org-info">
+                    <div class="info-title">
+                        <h1>Teléfono</h1>
+                        <p>Número de teléfono</p>
+                    </div>
+                    <img src="./img/icon-phone.svg" alt="Phone Icon">
+                </article>
+                <article  class="org-info">
+                    <div class="info-title">
+                        <h1>Correo electrónico</h1>
+                        <p>Dirección de correo</p>
+                    </div>
+                    <img src="./img/icon-mail.svg" alt="Mail Icon">
+                </article>
+            </section>
+
+            <img src="./img/Logo-inv.svg" alt="Cat&Dog" class="logo">
+        </div>
+
+
+        <p class="rights">Todos los derechos reservados Front End</p>
+    </footer>
 
 </body>
 </html>

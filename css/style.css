@@ -1,51 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 *{
     margin:0;
     padding:0;
     border:0;
     outline:0;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    font-weight: 500;
+    font-family: Roboto;
+    font-size: 16px;
 }
 
-footer{
-    background-color: #222222;
-    padding: 0.3rem;
-    color: white;
-    font-size: 0.75rem;
-    text-align: center;
+i{
+    color: #FAFAF5;
 }
+
+a{
+    text-decoration: none;
+    color: #FAFAF5;
+}
+
+.burger-menu{display: none;}
 
 .barra-sup{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: black;
+    align-items: center;
+    background-color: #222222;
     padding: 0.5rem 1rem;
 }
 
-.barra-sup h5{
-    color: white;
-    font-size: 0.75rem;
-}
-
-.barra-sup nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 0.75rem;
-}
-
-.barra-sup nav ul li, .cabecera nav ul li{
-    padding: 0 0.5rem;
-}
-
-.barra-sup nav ul li a, .cabecera nav ul li a{
-    color: white;
-}
-
-.barra-sup nav ul li a img, .cabecera nav ul li a img{
-    padding: 0 0.2rem;
-}
+    .barra-sup h5{
+        color: #FAFAF5;
+        font-weight: 400;
+        font-size: 0.75rem;
+    }
 
 .cabecera{
     display: flex;
@@ -56,49 +44,67 @@ footer{
     padding: 1rem;
 }
 
-.cabecera nav ul{
+.main-menu, .reg-menu{
     display: flex; 
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
 }
+
+    .main-menu a{
+        font-weight: 500;
+    }
+
+
+/*BANNER*/
 
 .banner{
     background-image: url(../img/bowl.png);
     background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     height: 80vh;    
-    
+    margin-bottom: 5rem;
 }
 
-.banner article{
-    position: absolute;
-    text-align: center;
-    top: 32vh;
-    right: 5rem;
-}
+    .bienvenido{
+        display: flex;
+        flex-direction: column;
+        text-align: center;        
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        transform: translate(-50%);
+        left: 70vw;
+        top: 30vh;
+        width: 50%;
+    }
 
-.banner article h1{
-    background-color: white;
-    padding: 1rem;
-    border-radius: 12px;
-    color: #3D2314;
-    font-size: 2rem;
-    font-weight: 600;
-}
+        .bienvenido h1{
+            background-color: #FAFAF5;
+            padding: 1rem;
+            border-radius: 12px;
+            color: #3D2314;
+            font-size: 2rem;
+        }
 
-.banner article h3{
-    margin: 1rem 0 1.5rem 0;
-    color: #3D2314;
-    font-weight: 600;
-}
+        .bienvenido p{
+            color: #3D2314;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
 
-.banner article a{
-    color: white;
-    font-weight: 500;
-    background-color: #F1A83F;
-    padding: 0.75rem 2rem;
-    border-radius: 10px;
-}
+        .bienvenido a{
+            background-color: #F1A83F;
+            color: #FAFAF5;
+            font-weight: 400;
+            font-size: 1.2rem;
+            padding: 1rem;
+            border-radius: 12px;
+        }
 
+
+/*PRODUCTOS*/ 
+        
 .titulo-prod{
     text-align: center;
     margin: 2rem;
@@ -107,43 +113,269 @@ footer{
 .titulo-prod h1{
     color: #3D2314;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.titulo-prod h4{
-    color: #3D2314;
-}
+    .titulo-prod p{
+        color: #3D2314;
+        font-weight: 400;
+    }
 
 .cont-prod{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 2rem;
-}
-
-.prod{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: #FAFAF5;
-    padding: 1rem 0;
+    gap: 1rem;
 }
 
-.prod h4{
-    color: #3D2314;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+    .prod{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #FAFAF5;
+        padding: 1rem ;
+        width: 25%;
+    }
+
+        .prod img{
+            width: 100%;
+        }
+
+        .prod h4{
+            color: #3D2314;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .prod p{
+            color: #F1A83F;
+            font-weight: 600;
+        }
+
+
+/*FORMULARIO DE CONTACTO*/
+
+.contact{
+    margin: 6rem 0;
 }
 
-.prod p{
-    color: #F1A83F;
-    font-weight: 600;
+    .contact h1{
+        text-align: center;
+        font-size: 2rem;
+        color: #3D2314;
+    }
+
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        color: #FAFAF5;
+        margin: 2rem;
+    }
+
+        .form-input{
+            background-color: #3D2314;
+            padding: 1rem;
+            border-radius: 20px;
+            width: 40vw;
+            color: #FAFAF5;
+        }
+
+            .form-input::placeholder{
+                color: #FAFAF5;
+                font-weight: 400;
+            }
+
+        .form-btn{
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+        }
+
+            .btn-submit, .btn-reset{
+                padding: 0.5rem 1.5rem;
+                border-radius: 20px;
+                background-color: #F1A83F;
+                color: #FAFAF5;
+            }
+
+            .btn-reset{
+                background-color: #929292;
+            }
+
+
+/*FOOTER*/
+
+/*SUBSCRIPCION*/
+
+.subscription{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F1A83F;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+    .subscription h1{
+        color: #FAFAF5;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .sub-form-input{
+        padding: 0.5rem;
+        vertical-align:middle;
+        width: 20vw;
+        border-radius: 12px;
+        color:#929292
+    }
+
+        .sub-form-input::placeholder{
+            font-size: 0.8rem;
+        }
+    
+    .sub-form-btn{
+        background-color: #3D2314;
+        color:#FAFAF5;
+        padding: 0.75rem 1rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+    }
+
+
+/*FOOTER FOOTER*/
+
+.footer-info{
+    background-color: #3D2314;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+        .org-info{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: start;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+            .org-info:last-child{
+                margin-bottom: 0;
+            }
+
+            .org-info h1{
+                color: #FAFAF5;
+            }
+
+            .org-info p{
+                color: #929292;
+            }
+        
+        .info-title{
+            display: flex;
+            flex-direction: column;
+        }
+
+    .footer-info .img{
+        width: 30%;
+    }
+
+
+/*TODOS LOS DERECHOS RESERVADOS FRONT END*/
+    
+.rights{
+    background-color: #222222;
+    padding: 0.3rem;
+    color: #FAFAF5;
+    font-size: 0.75rem;
+    text-align: center;
 }
 
 
 
 
+/*Media*/
+
+@media (max-width:840px){
+    .bienvenido{
+        left: 50vw;
+        width: 90%;
+    }
+
+        .bienvenido p{
+            color: #FAFAF5;
+        }
+
+    .main-menu{
+        display: none;
+    }
+
+    .burger-menu{
+        display: inline-block;
+    }
+
+    .cont-prod{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .prod{
+        width: 60vw;
+    }
 
 
+    .form-input{
+        width: 80vw;
+    }
+
+    .subscription{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .sub-form-input{
+        width: 60vw;
+    }
+
+    .footer-info{
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+        .footer-info .logo{
+            width: 90%;
+        }
+    
+}
+
+@media (max-width:480px) {
+    .bienvenido h1, .titulo-prod h1, .contact h1{
+        font-size: 1.75rem;
+    }
+
+    .bienvenido p, .bienvenido a{
+        font-size: 1rem;
+    }
+
+    .subscription{
+        text-align: center;
+    }
+
+        .sub-form-input{
+            width: 90%;
+        }
+
+        .sub-form-btn{
+            width: 95%;
+            padding: 0.5rem;
+            border-radius: 12px;
+            margin-top: 0.5rem;
+        }
+}
